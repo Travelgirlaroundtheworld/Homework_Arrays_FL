@@ -36,9 +36,7 @@
         <div class="header">
             <h1 id='heading'>Travel Life</h1>
             <p>Welcome to the world</p>
-            <div id="melb"></div>
-            <div id="la"></div>
-            <div id="tok"></div>
+            <div id="travel"></div>
             <button id="thing2"> let me travel more!</button>
         </div>
 ​
@@ -52,17 +50,16 @@
                 console.log(cities);
                 console.log("I have lived in " + cities[0]);
         		for (var key = 0; key < cities.length; key = key + 1 ) {
-        			console.log("City " + key + " has been " + cities[key] );
-                    
+        			console.log("City " + key + " has been " + cities[key] );     
                 }
-        		$("#melb").append('<img src="1melb.jpg" class=img-fluid >');
+                
+        		$("#travel").append('<img src="1melb.jpg" class=img-fluid >');
         		$("#thing2").on("click",function(){
                     alert("let´s leave " + cities[0]+ " and keep travelling");
-                
-        			$("#la").append('<img src="2la.jpg" class=img-fluid >');
+        		$("#travel").append('<img src="2la.jpg" class=img-fluid >');
                 $("#thing2").on("click",function(){
         			alert("let´s leave " + cities[1]+ " and keep travelling");
-                     $("#tok").append('<img src="3tok.jpg" class=img-fluid >');
+                     $("#travel").append('<img src="3tok.jpg" class=img-fluid >');
                      alert("let´s leave " + cities[2]+ " and keep travelling");
                 });
             });
