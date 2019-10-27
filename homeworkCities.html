@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> First JavaScript Test</title>
+        <style>
+                body{
+                    background-color: pink;
+                    padding-left: 20px;
+                    padding-top: 20px;
+                    font-size: 30px;
+                    }
+                
+                h1{
+                    color: purple;
+                }
+
+            
+            </style>
+       
+
+         <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+
+    </head>
+    <body>
+    	
+        <div class="header">
+            <h1 id='heading'>Travel Life</h1>
+            <p>Welcome to the world</p>
+            <div id="melb"></div>
+            <div id="la"></div>
+            <div id="tok"></div>
+            <button id="thing2"> let me travel more!</button>
+        </div>
+​
+    
+        <script>
+        	
+        	$(document).ready(function() {
+        		alert("Let´s see the places I have been to");
+        		console.log("Travelgirl on tour");
+        		var cities = ["Melbourne", "Los Angeles", "Tokyo"];
+                console.log(cities);
+                console.log("I have lived in " + cities[0]);
+        		for (var key = 0; key < cities.length; key = key + 1 ) {
+        			console.log("City " + key + " has been " + cities[key] );
+                    
+                }
+        		$("#melb").append('<img src="1melb.jpg" class=img-fluid >');
+        		$("#thing2").on("click",function(){
+                    alert("let´s leave " + cities[0]+ " and keep travelling");
+                
+        			$("#la").append('<img src="2la.jpg" class=img-fluid >');
+                $("#thing2").on("click",function(){
+        			alert("let´s leave " + cities[1]+ " and keep travelling");
+                     $("#tok").append('<img src="3tok.jpg" class=img-fluid >');
+                     alert("let´s leave " + cities[2]+ " and keep travelling");
+                });
+            });
+
+        	});
+        </script>
+    </body>
+</html>
+
+
+
+
