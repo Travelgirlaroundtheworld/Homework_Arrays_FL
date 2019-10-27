@@ -8,14 +8,13 @@
                     padding-left: 20px;
                     padding-top: 20px;
                     font-size: 30px;
+                    font-family: 'Courier New', Courier, monospace;
                     }
                 
                 h1{
                     color: purple;
                 }
-
-            
-            </style>
+        </style>
        
 
          <!-- Required meta tags -->
@@ -36,7 +35,7 @@
         <div class="header">
             <h1 id='heading'>Travel Life</h1>
             <p>Welcome to the world...</p>
-            <div id="travel"></div>
+            <div class="travel"></div>
             <button id="thing2"> let me travel more, 2nd Stop!</button>
         </div>
         <div>
@@ -51,19 +50,22 @@
         		alert("Let´s see the places I have been to");
         		console.log("Travelgirl on tour");
         		var cities = ["Melbourne", "Los Angeles", "Tokyo"];
+                const image = ['img src="1melb.jpg"', ' img src="2la.jpg"', 'img src="3tok.jpg"'];
                 console.log(cities);
                 console.log("I have lived in " + cities[0]);
+                
         		for (var key = 0; key < cities.length; key = key + 1 ) {
-        			console.log("City " + key + " has been " + cities[key] );     
+        			console.log("City " + key + " has been " + cities[key] );    
+                    console.log(cities[key] + ' is a great city to visit' + image[key]+ '.'); 
                 }
                 
-        		$("#travel").append('<img src="1melb.jpg" class=img-fluid >');
+        		$(".travel").append('<img src="1melb.jpg" class=img-fluid >');
         		$("#thing2").on("click",function(){
                     alert("let´s leave " + cities[0]+ " and keep travelling");
-        		$("#travel").append('<img src="2la.jpg" class=img-fluid >');
+        		$(".travel").append('<img src="2la.jpg" class=img-fluid >');
                 $("#thing3").on("click",function(){
         		    alert("let´s leave " + cities[1]+ " and keep travelling");
-                     $("#travel").append('<img src="3tok.jpg" class=img-fluid >');
+                     $(".travel").append('<img src="3tok.jpg" class=img-fluid >');
                      alert("let´s leave " + cities[2]+ " and keep travelling");
                 });
             });
