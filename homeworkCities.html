@@ -35,11 +35,15 @@
     	
         <div class="header">
             <h1 id='heading'>Travel Life</h1>
-            <p>Welcome to the world</p>
+            <p>Welcome to the world...</p>
             <div id="travel"></div>
-            <button id="thing2"> let me travel more!</button>
+            <button id="thing2"> let me travel more, 2nd Stop!</button>
         </div>
-​
+        <div>
+            <div id="travel"></div>
+            <button id="thing3"> let me travel more, 3rd!</button>
+        </div>
+    
     
         <script>
         	
@@ -57,8 +61,8 @@
         		$("#thing2").on("click",function(){
                     alert("let´s leave " + cities[0]+ " and keep travelling");
         		$("#travel").append('<img src="2la.jpg" class=img-fluid >');
-                $("#thing2").on("click",function(){
-        			alert("let´s leave " + cities[1]+ " and keep travelling");
+                $("#thing3").on("click",function(){
+        		    alert("let´s leave " + cities[1]+ " and keep travelling");
                      $("#travel").append('<img src="3tok.jpg" class=img-fluid >');
                      alert("let´s leave " + cities[2]+ " and keep travelling");
                 });
